@@ -56,3 +56,15 @@ For your project presentation on the effectiveness of different AC models in veh
 4. **Data Highlighting:** Use colors or bold text to highlight key findings and important data points.
 
 This structure will help you convey your analysis clearly and effectively. If you need help with specific slides or further details, feel free to ask!
+
+
+I want to make a ppt for a project where i calculate the rate of cooling (rate of temperature changes) for seeing AC effectiveness. 
+I did that for 5 models ( named YHB, YHC, YTB, YXA, YFG) Each model consists about 100 vehicles. 
+For calculating this first i removed the instances from the data where AC was off. 
+Then when i have only those instances where AC was on, I grouped the continuous instances, we can call it Trips (which are ultimately the trips having only values where AC was on). 
+Now I only kept those Trips where AC was on for at-least 10 minutes. (each trip should have 10 or more rows) 
+Now I calculated the rate of temperature change by calculating the difference from the next minute.
+
+Finally I plotted the model wise box plot.
+
+In two vehicles YHC and YFG there were around 5% of vehicles where rate of cooling is negative (Means Inside air temperature is getting hotter than cooler) or zero.
